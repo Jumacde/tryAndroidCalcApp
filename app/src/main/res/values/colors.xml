@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="PowderBlue">#B0DEDB</color>
+    <color name="Alabaster">#F1E9E3</color>
+    <color name="TiffanyBlue">#00ABC0</color>
+    <color name="PictorialCarmine">#C51248</color>
+    <color name="PaleGreen">#99FB99</color>
+    <color name="VeryLightMalachiteGreen">#66E988</color>
+    <color name="CrayolasSkyBlue">#62DCF8</color>
+    <color name="InfraRed">#FE4C6B</color>
+    <color name="Shandy">#FFE374</color>
+    <color name="YankeesBlue">#131A49</color>
+
 </resources>
