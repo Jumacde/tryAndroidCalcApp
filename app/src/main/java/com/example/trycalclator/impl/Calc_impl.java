@@ -7,6 +7,11 @@ public class Calc_impl implements Calc {
     private int int_num;
     private int m,n;
 
+    private String currentDisplayString;
+    private String currentOperator;
+    private boolean waitingForNewNumber;
+    private boolean hasDecimalPoint;
+
     public Calc_impl() {
         this.num = 0;
         this.i1 = 0;
@@ -64,5 +69,45 @@ public class Calc_impl implements Calc {
     @Override
     public void setN(int n) {
         this.n = n;
+    }
+
+    @Override
+    public String getCurrentDisplayString() {
+        return "";
+    }
+
+    @Override
+    public void setCurrentDisplayString(String currentDisplayString) {
+        this.currentDisplayString = currentDisplayString;
+    }
+
+    @Override
+    public String getCurrentOperator() {
+        return "";
+    }
+
+    @Override
+    public void setCurrentOperator(String currentOperator) {
+        this.currentOperator = currentOperator;
+    }
+
+    @Override
+    public boolean getWaitingForNewNumber() {
+        return false;
+    }
+
+    @Override
+    public void setWaitingForNewNumber(boolean waitingForNewNumber) {
+        this.waitingForNewNumber = waitingForNewNumber;
+    }
+
+    @Override
+    public boolean getHasDecimalPoint() {
+        return false;
+    }
+
+    @Override
+    public void setHasDecimalPoint(boolean hasDecimalPoint) {
+        this.hasDecimalPoint = hasDecimalPoint;
     }
 }

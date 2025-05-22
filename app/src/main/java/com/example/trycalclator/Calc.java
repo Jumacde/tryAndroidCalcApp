@@ -11,4 +11,13 @@ public interface Calc {
     void setM(int m);
     int getN();
     void setN(int n);
+
+    String getCurrentDisplayString();
+    void setCurrentDisplayString(String currentDisplayString);
+    String getCurrentOperator();
+    void setCurrentOperator(String currentOperator);
+    boolean getWaitingForNewNumber();
+    void setWaitingForNewNumber(boolean waitingForNewNumber);
+    boolean getHasDecimalPoint();
+    void setHasDecimalPoint(boolean hasDecimalPoint);
 }
