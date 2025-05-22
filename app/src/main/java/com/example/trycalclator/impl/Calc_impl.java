@@ -13,17 +13,10 @@ public class Calc_impl implements Calc {
     private boolean hasDecimalPoint;
 
     public Calc_impl() {
-        this.num = 0;
-        this.i1 = 0;
-        this.int_num = 0;
-        this.m = 0;
-        this.n = 0;
-        this.currentDisplayString = "0";
-        this.currentOperator = "";
-
+        clear();
     }
 
-
+    // getter & setter
     @Override
     public float getNum() {
         return num;
@@ -86,7 +79,7 @@ public class Calc_impl implements Calc {
 
     @Override
     public String getCurrentOperator() {
-        return "";
+        return currentOperator;
     }
 
     @Override
@@ -96,7 +89,7 @@ public class Calc_impl implements Calc {
 
     @Override
     public boolean getWaitingForNewNumber() {
-        return true;
+        return waitingForNewNumber;
     }
 
     @Override
@@ -106,7 +99,7 @@ public class Calc_impl implements Calc {
 
     @Override
     public boolean getHasDecimalPoint() {
-        return false;
+        return hasDecimalPoint;
     }
 
     @Override
@@ -118,6 +111,21 @@ public class Calc_impl implements Calc {
     // method: input number
     @Override
     public void appendDigit(int digit) {
+        if (waitingForNewNumber) {
+            num = digit;
+            waitingForNewNumber = false;
+            hasDecimalPoint = false;
+            m = 0;
+            n = 0;
+        } else {
+            if (hasDecimalPoint || m == 1) {
+                n++;
+                num = (float) (num + digit / Math.pow(10, n));
+            } else {
+                num = num * 10 + digit;
+            }
+        }
+
 
     }
 
@@ -130,6 +138,15 @@ public class Calc_impl implements Calc {
     // method: clear
     @Override
     public void clear() {
+        this.m = 0;
+        this.n = 0;
+        this.i1 = 0;
+        this.num = 0;
+        this.int_num = 0;
+        this.currentOperator = "";
+        this.waitingForNewNumber = true;
+        this.hasDecimalPoint = false;
+
 
     }
 
@@ -139,5 +156,18 @@ public class Calc_impl implements Calc {
 
     }
 
+
+    ///// method only at this program
+    private void calculateResult() {
+
+    }
+
+    private void updateCurrentDisplayString() {
+
+    }
+
+    private void updateCurrentDisplayStringWithOperator() {
+
+    }
 
 }
