@@ -1,6 +1,8 @@
 package com.example.trycalclator;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    TextView textView;
+    Button p, mi, mu, d, e;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

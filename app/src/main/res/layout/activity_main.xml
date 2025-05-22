@@ -221,7 +221,7 @@
                 android:backgroundTint="@color/DarkVanilla"
                 android:text="A/C"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="25dp"
+                android:textSize="27dp"
                 android:onClick="ac"/>
             <Button
                 android:id="@+id/equal"
