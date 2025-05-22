@@ -20,4 +20,13 @@ public interface Calc {
     void setWaitingForNewNumber(boolean waitingForNewNumber);
     boolean getHasDecimalPoint();
     void setHasDecimalPoint(boolean hasDecimalPoint);
+
+    // input number
+    void appendDigit(int digit);
+    // input decimal number
+    void addDecimalPoint();
+    // clear method
+    void clear();
+    // apply operators
+    void applyOperator(String operator);
 }

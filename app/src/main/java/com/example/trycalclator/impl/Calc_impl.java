@@ -18,6 +18,9 @@ public class Calc_impl implements Calc {
         this.int_num = 0;
         this.m = 0;
         this.n = 0;
+        this.currentDisplayString = "0";
+        this.currentOperator = "";
+
     }
 
 
@@ -93,7 +96,7 @@ public class Calc_impl implements Calc {
 
     @Override
     public boolean getWaitingForNewNumber() {
-        return false;
+        return true;
     }
 
     @Override
@@ -110,4 +113,31 @@ public class Calc_impl implements Calc {
     public void setHasDecimalPoint(boolean hasDecimalPoint) {
         this.hasDecimalPoint = hasDecimalPoint;
     }
+
+    //// methods ////
+    // method: input number
+    @Override
+    public void appendDigit(int digit) {
+
+    }
+
+    // method: input decimal number
+    @Override
+    public void addDecimalPoint() {
+
+    }
+
+    // method: clear
+    @Override
+    public void clear() {
+
+    }
+
+    // method: apply operators
+    @Override
+    public void applyOperator(String operator) {
+
+    }
+
+
 }
