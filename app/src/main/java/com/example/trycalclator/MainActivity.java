@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         e = findViewById(R.id.equal);
 
         // Updated display at startup
-        updateDisplay();
+        //updateDisplay();
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
