@@ -121,6 +121,9 @@ public class Calc_impl implements Calc {
         currentNumber = result;
     }
 
+    /**
+     * setting for the showing numbers on the display
+     * */
     private void updateCurrentDisplayString() {
         if (currentNumber == (long) currentNumber && !hasDecimalPoint) {
             displayString = String.valueOf((long) currentNumber);
@@ -134,6 +137,9 @@ public class Calc_impl implements Calc {
         }
     }
 
+    /**
+     * set the showing of the calculate-processing using by stored number and operator
+     * */
     private void updateDisplayStringWithOperator() {
         if (storedNumber == (long) storedNumber) {
             displayString = String.valueOf((long) storedNumber) + " " + currentOperator + " ";

@@ -14,7 +14,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="720dp"
         android:orientation="vertical">
 
         <TextView
@@ -22,18 +22,20 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="fill_horizontal"
-            android:background="@color/DutchWhite"
-            android:textColor="@color/YankeesBlue"
-            android:textSize="30sp"
-            android:gravity="left|bottom"
             android:layout_marginBottom="10dp"
-            android:text="0" />
+            android:background="@color/DutchWhite"
+            android:gravity="left|bottom"
+            android:text="0"
+            android:textColor="@color/YankeesBlue"
+            android:textSize="30sp" />
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10sp"
             android:background="@color/Shandy"
-            android:columnCount="3">
+            android:columnCount="3"
+            android:padding="10sp">
+
             <Button
                 android:id="@+id/b1"
                 android:layout_width="wrap_content"
@@ -42,10 +44,11 @@
                 android:layout_column="0"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press1"
                 android:text="1"
-                android:textSize="30dp"
                 android:textColor="@color/CosmicLatte"
-                android:onClick="press1"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b2"
                 android:layout_width="wrap_content"
@@ -54,10 +57,11 @@
                 android:layout_column="1"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press2"
                 android:text="2"
-                android:textSize="30dp"
                 android:textColor="@color/CosmicLatte"
-                android:onClick="press2"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b3"
                 android:layout_width="wrap_content"
@@ -66,10 +70,11 @@
                 android:layout_column="2"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press3"
                 android:text="3"
-                android:textSize="30dp"
                 android:textColor="@color/CosmicLatte"
-                android:onClick="press3"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b4"
                 android:layout_width="wrap_content"
@@ -78,10 +83,11 @@
                 android:layout_column="0"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press4"
                 android:text="4"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press4"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b5"
                 android:layout_width="wrap_content"
@@ -90,10 +96,11 @@
                 android:layout_column="1"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press5"
                 android:text="5"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press5"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b6"
                 android:layout_width="wrap_content"
@@ -102,10 +109,11 @@
                 android:layout_column="2"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press6"
                 android:text="6"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press6"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b7"
                 android:layout_width="wrap_content"
@@ -114,10 +122,11 @@
                 android:layout_column="0"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press7"
                 android:text="7"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press7"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b8"
                 android:layout_width="wrap_content"
@@ -126,10 +135,11 @@
                 android:layout_column="1"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press8"
                 android:text="8"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press8"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b9"
                 android:layout_width="wrap_content"
@@ -138,10 +148,11 @@
                 android:layout_column="2"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press9"
                 android:text="9"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press9"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/b0"
                 android:layout_width="wrap_content"
@@ -150,10 +161,10 @@
                 android:layout_column="0"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="press0"
                 android:text="0"
                 android:textColor="@color/CosmicLatte"
-                android:textSize="30dp"
-                android:onClick="press0"/>
+                android:textSize="30dp" />
 
             <Button
                 android:id="@+id/point"
@@ -163,10 +174,11 @@
                 android:layout_column="1"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="point"
                 android:text="."
-                android:textSize="30dp"
                 android:textColor="@color/WintergreenDream"
-                android:onClick="point"/>
+                android:textSize="30dp" />
+
             <Button
                 android:id="@+id/plass"
                 android:layout_width="wrap_content"
@@ -177,7 +189,8 @@
                 android:backgroundTint="@color/DarkVanilla"
                 android:text="+"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
+
             <Button
                 android:id="@+id/minus"
                 android:layout_width="wrap_content"
@@ -188,7 +201,8 @@
                 android:backgroundTint="@color/DarkVanilla"
                 android:text="-"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
+
             <Button
                 android:id="@+id/multy"
                 android:layout_width="wrap_content"
@@ -199,7 +213,8 @@
                 android:backgroundTint="@color/DarkVanilla"
                 android:text="x"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
+
             <Button
                 android:id="@+id/div"
                 android:layout_width="wrap_content"
@@ -210,7 +225,8 @@
                 android:backgroundTint="@color/DarkVanilla"
                 android:text="÷"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
+
             <Button
                 android:id="@+id/ac"
                 android:layout_width="wrap_content"
@@ -219,10 +235,11 @@
                 android:layout_column="0"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/DarkVanilla"
+                android:onClick="ac"
                 android:text="A/C"
                 android:textColor="@color/WintergreenDream"
-                android:textSize="27dp"
-                android:onClick="ac"/>
+                android:textSize="27dp" />
+
             <Button
                 android:id="@+id/equal"
                 android:layout_width="wrap_content"
@@ -233,7 +250,7 @@
                 android:backgroundTint="@color/CosmicLatte"
                 android:text="="
                 android:textColor="@color/GreenSheen"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
         </GridLayout>
     </LinearLayout>
 </LinearLayout>
